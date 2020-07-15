@@ -4,7 +4,7 @@ Dependencies
 
 Todo:
 - create functions
-  - make box
+  - ~~make box~~
   - make sphere
 - location data
   - research ecosystems and how it affects wildlife
