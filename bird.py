@@ -1,6 +1,7 @@
 from vpython import *
 from random import *
 from models import *
+import time
 
 def createHead(obj):
     obj = obj.getObj()
@@ -68,7 +69,37 @@ def makeWings(obj, joints):
             limbs.append(wing)
     return limbs
 
-def createBird():
+def createTail(obj, joints):
+    tailLength = randrange(1, 4, 1)/3
+    tailWidth = randrange(1, 4, 1)/3
+    tailHeight = randrange(1, 4, 1)/8
+    for joint in joints:
+        name = joint.getName()
+        if 'tail' in name:
+            jointObj = joint.obj
+            # wing arm           
+            a = sqrt((tailLength*tailLength)/2)
+            tailPos = jointObj.pos + vector((a/2)+0.10, (a/2)+0.10, 0)
+            tail = createBox(name+"Tail", tailPos, vector(1,1,0), vector(0,0,0), tailLength, tailWidth, tailHeight)
+    return tail
+
+def createFeet(obj, joints):
+    feetLength = randrange(1, 4, 1)/4
+    feetWidth = randrange(1, 4, 1)/4
+    feetHeight = randrange(1, 4, 1)/4
+    feet = []
+    for joint in joints:
+        name = joint.getName()
+        if 'Foot' in name:
+            jointObj = joint.obj
+            # wing arm           
+            a = sqrt((feetLength*feetLength)/2)
+            feetPos = jointObj.pos + vector(-(a/2), -(a/2), 0)
+            foot = createBox(name+"foot", feetPos, vector(0,0,0), vector(0,0,0), feetLength, feetWidth, feetHeight)
+            feet.append(foot)
+    return feet
+
+def createBird(id):
     length = randrange(2, 5, 1)
     width = randrange(1, 4, 1)/4
     height = randrange(1, 4, 1)/4
@@ -77,6 +108,11 @@ def createBird():
     joints = addJoints(body, getCorners)
     [neck, head, beak] = createHead(body)
     limbs = makeWings(body, joints)
+    tail = createTail(body, joints)
+    feet = createFeet(body, joints)
+    parts = [neck, head, beak, body, tail, feet[0], feet[1]]
+    bird = customBody(parts, joints, 'customBird#'+id)
+    return bird
 
-createBird()
 
+createBird(str(time.time()))

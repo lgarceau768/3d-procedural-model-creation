@@ -1,6 +1,7 @@
 from vpython import *
 from random import *
 from models import *
+import time
 
 def getCorners(obj):
     '''
@@ -95,7 +96,7 @@ def createLimbs(obj, joints):
             print(joint)
     return limbs
 
-def createQuad():
+def createQuad(id):
     '''
     inherit traits
     length #
@@ -117,10 +118,10 @@ def createQuad():
     parts = [head, neck, body]
     for limb in limbs: 
         parts.append(limb)
-    creatureBody = customBody(parts, joints, 'creature')
+    creatureBody = customBody(parts, joints, 'customQuad#'+id)
     print('done')
     return creatureBody
 
 
-# attempt to create a four legged creatue with a head and body
-createQuad()
+# attempt to create a four legged creatue with a head and bodyW
+createQuad(str(time.time()))
