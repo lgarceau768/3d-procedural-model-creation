@@ -3,21 +3,12 @@
 `python 3+`
 
 # Todo:
-- create functions
-  - ~~make box~~
-  - ~~make sphere~~
-- location data
-  - research ecosystems and how it affects wildlife
-- create base "monster" with simple boxes
-- work to automate the above functionality and add randomness 
-- incorporate ecosystem features into monster creation ^  
-- add different body types (pick randomly)  
-  - quadapretal
-  - tailed animals
-  - bipedal animals
-  - winged animals
+- incorporate genetic code  
+  - input json with info?
+  - amt legs, body height, color, etc  
+- no mans sky generation algo test  
+  - instead of generating each of the features we take pre existing features and randomly put them together
 
 
 
 # Ideas:
-- could use the spheres as joints and then create movement from there (dont really need that rn for a poc but could explore in future)
