@@ -123,5 +123,8 @@ def createQuad(id):
     return creatureBody
 
 
+
+
 # attempt to create a four legged creatue with a head and bodyW
-createQuad(str(time.time()))
+model = createQuad(str(time.time()).split('.')[0])
+createSTL(model)

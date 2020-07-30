@@ -115,4 +115,4 @@ def createBird(id):
     return bird
 
 
-createBird(str(time.time()))
+createBird(str(time.time()).split('.')[0])
