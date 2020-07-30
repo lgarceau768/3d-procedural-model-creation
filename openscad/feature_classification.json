@@ -1,0 +1,55 @@
+{
+    "feature-type": ["limb", "head", "torso"],
+    "_comment": "limb type only used if limb",
+    "limb-type": ["wing", "tail", "arm", "leg"],
+    "_comment2": "body-type only needed if torso",
+    "body-type": ["bird", "quadrapedal", "bipedal", "fish"],
+    "connection-points": [
+        {
+            "name": "exampleName - leftArm",
+            "main-point": ["x", "y", "z"],
+            "_comment": {
+                "_this_order": [
+                    "topLeft",
+                    "topRight",
+                    "bottomLeft",
+                    "bottomRight"
+                ]
+            },
+            "bounding-box-points": [
+                ["x","y","z"],
+                ["x","y","z"],
+                ["x","y","z"],
+                ["x","y","z"]
+            ],
+            "bounding-box-dimensions": ["w", "l"],
+            "connection-feature-type": ["limb", "head", "torso"],
+            "_comment2": "connection-limb-type only used if limb",
+            "connection-limb-type": ["wing", "tail", "arm", "leg"],
+            "orientation": ["left", "right"]         
+        },
+        {
+            "name": "exampleName - leftArm",
+            "main-point": ["x", "y", "z"],
+            "_comment": {
+                "_this_order": [
+                    "topLeft",
+                    "topRight",
+                    "bottomLeft",
+                    "bottomRight"
+                ]
+            },
+            "bounding-box-points": [
+                ["x","y","z"],
+                ["x","y","z"],
+                ["x","y","z"],
+                ["x","y","z"]
+            ],
+            "bounding-box-dimensions": ["w", "l"],
+            "connection-feature-type": ["limb", "head", "torso"],
+            "_comment2": "connection-limb-type only used if limb",
+            "connection-limb-type": ["wing", "tail", "arm", "leg"],
+            "orientation": ["left", "right"]         
+        }
+    ]     
+}
