@@ -1,5 +1,6 @@
 {
     "feature-type": ["limb", "head", "torso"],
+    "feature-path": "path-to-feature",
     "_comment": "limb type only used if limb",
     "limb-type": ["wing", "tail", "arm", "leg"],
     "_comment2": "body-type only needed if torso",
