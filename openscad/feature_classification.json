@@ -1,6 +1,16 @@
 {
     "feature-type": ["limb", "head", "torso"],
     "feature-path": "path-to-feature",
+    "bounding-box-size": {
+        "width": 0,
+        "height": 0,
+        "length": 0
+    },
+    "center-point": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+    },
     "_comment": "limb type only used if limb",
     "limb-type": ["wing", "tail", "arm", "leg"],
     "_comment2": "body-type only needed if torso",
