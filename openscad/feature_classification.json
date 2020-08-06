@@ -18,7 +18,11 @@
     "connection-points": [
         {
             "name": "exampleName - leftArm",
-            "main-point": ["x", "y", "z"],
+            "main-point": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
             "_comment": {
                 "_this_order": [
                     "topLeft",

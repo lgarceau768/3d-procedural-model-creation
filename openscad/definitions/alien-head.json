@@ -1,0 +1,52 @@
+{
+    "feature-type": "head",
+    "feature-path": "features/alien-head.stl",
+    "bounding-box-size": {
+        "width": 2,
+        "height": 2.8,
+        "length": 2.4
+    },
+    "center-point": {
+        "x": 1,
+        "y": 1.2,
+        "z": 1.4
+    },
+    "connection-points": [
+        {
+            "name": "head",
+            "main-point": {
+                "x": 0,
+                "y": -0.3,
+                "z": 0.7
+            },
+            "bounding-box-points": [
+                {
+                    "x": -0.3,
+                    "y": -0.5,
+                    "z": 0.7
+                },
+                {
+                    "x": 0.3,
+                    "y": -0.5,
+                    "z": 0.7
+                },
+                {
+                    "x": -0.2,
+                    "y": 0.2,
+                    "z": 0.6
+                },
+                {
+                    "x": 0.2,
+                    "y": 0.2,
+                    "z": 0.6
+                }
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.1,
+                "height": 0.1,
+                "length": 0.3
+            },
+            "connection-feature-type": "head"
+        }
+    ]
+}
