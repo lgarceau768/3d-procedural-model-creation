@@ -43,10 +43,9 @@
             ],
             "bounding-box-dimensions": {
                 "width": 0.1,
-                "height": 0.1,
-                "length": 0.3
+                "height": 0.1
             },
-            "connection-feature-type": "head"
+            "connection-feature-type": "torso"
         }
     ]
 }
