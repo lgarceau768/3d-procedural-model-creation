@@ -1,6 +1,7 @@
 # Dependencies
 `vpython`  
-`python 3+`
+`python 3+`  
+`openscad` https://www.openscad.org/
 
 # Todo:
 - incorporate genetic code  
