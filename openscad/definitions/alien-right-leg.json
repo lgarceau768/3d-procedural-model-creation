@@ -14,7 +14,7 @@
     "limb-type": "leg",
     "connection-points": [
         {
-            "name": "right-leg",
+            "name": "leg-joint",
             "main-point": {
                 "x": 0.7,
                 "y": 0,

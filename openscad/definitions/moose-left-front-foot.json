@@ -1,0 +1,39 @@
+{
+    "feature-type": "limb",
+    "feature-path": "features/moose-left-front-foot.stl",
+    "body-type": "quadrapetal",
+    "bounding-box_size": {
+        "width": 0.9,
+        "height": 2.2,
+        "length": 1.6 
+    },
+    "center-point": {
+        "x": 0.45,
+        "y": 0.8,
+        "z": 1.1
+    }, 
+    "limb-type": "leg",
+    "connection-points": [
+        {
+            "name": "leg-joint",
+            "main-point": {
+                "x": 0,
+                "y": -0.5,
+                "z": 2.2
+            },
+            "bouding-box-points": [
+                [0.2, 0.2, 1.8],
+                [-0.2, 0.2, 1.8],
+                [0.2, 0.7, 1.8],
+                [-0.2, 0.7, 1.8]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.4,
+                "length": 0.5
+            },
+            "connection-feature-type": "torso",
+            "orientation": "left",
+            "position": "front"
+        }
+    ]
+}

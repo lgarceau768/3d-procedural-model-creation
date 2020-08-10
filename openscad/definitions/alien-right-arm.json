@@ -1,0 +1,37 @@
+{
+    "feature-type": "limb",
+    "feature-path": "features/alien-right-arm.stl",
+    "bounding-box_size": {
+        "width": 5.9,
+        "height": 10,
+        "length": 3.9 
+    },
+    "center-point": {
+        "x": 2.85,
+        "y": 1.85,
+        "z": 5
+    }, 
+    "limb-type": "arm",
+    "connection-points": [
+        {
+            "name": "arm-joint",
+            "main-point": {
+                "x": 1.4,
+                "y": 0.4,
+                "z": 8.5
+            },
+            "bouding-box-points": [
+                [1.4, 0, 9],
+                [1.4, 0.8, 9],
+                [1.4, 0, 8],
+                [1.4, 0.8, 8]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.8,
+                "length": 1
+            },
+            "connection-feature-type": "torso",
+            "orientation": "right"
+        }
+    ]
+}

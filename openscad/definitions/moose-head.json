@@ -1,0 +1,35 @@
+{
+    "feature-type": "head",
+    "feature-path": "features/moose-head.stl",
+    "bounding-box-size": {
+        "width": 2.3,
+        "height": 3.6,
+        "length": 3.4
+    },
+    "center-point": {
+        "x": 1.65,
+        "y": 1.7,
+        "z": 1.8
+    },
+    "connection-points": [
+        {
+            "name": "neck-joint",
+            "main-point": {
+                "x": 0,
+                "y": 0.2,
+                "z": 0.4
+            },
+            "bounding-box-points": [
+                [0, -0.1, 0.6],
+                [0, -0.1, 0.6],
+                [0, 0.1, 0.2],
+                [0, 0.1, 0.2]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.2,
+                "height": 0.4
+            },
+            "connection-feature-type": "torso"
+        }
+    ]
+}

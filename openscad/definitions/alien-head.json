@@ -13,7 +13,7 @@
     },
     "connection-points": [
         {
-            "name": "head",
+            "name": "neck-joint",
             "main-point": {
                 "x": 0,
                 "y": -0.3,
