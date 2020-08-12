@@ -1,0 +1,120 @@
+{
+    "feature-type": "torso",
+    "feature-path": "features/orc-torso.stl",
+    "bounding-box-size": {
+        "width": 2.4,
+        "height": 4,
+        "length": 2
+    },
+    "center-point": {
+        "x": 0,
+        "y": 0,
+        "z": 2
+    },
+    "body-type": "bipedal",
+    "connection-points": [
+        {
+            "name": "left-leg-joint",
+            "main-point": {
+                "x": 0.7,
+                "y": 0,
+                "z": 0.3
+            },
+            "bounding-box-points": [
+                [0.5, -0.4, 0.3],
+                [0.9, -0.4, 0.3],
+                [0.5, 0.4, 0.3],
+                [0.9, 0.4, 0.3]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.4,
+                "height": 0.8
+            },
+            "connection-feature-type": "limb",
+            "connection-limb-type": "leg",
+            "orientation": "left"     
+        },
+        {
+            "name": "right-leg-joint",
+            "main-point": {
+                "x": -0.7,
+                "y": 0,
+                "z": 0.3
+            },
+            "bounding-box-points": [
+                [-0.5, -0.4, 0.3],
+                [-0.9, -0.4, 0.3],
+                [-0.5, 0.4, 0.3],
+                [-0.9, 0.4, 0.3]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.4,
+                "height": 0.8
+            },
+            "connection-feature-type": "limb",
+            "connection-limb-type": "leg",
+            "orientation": "right"     
+        },
+        {
+            "name": "left-arm-joint",
+            "main-point": {
+                "x": 1.2,
+                "y": -0.2,
+                "z": 2.8
+            },
+            "bounding-box-points": [
+                [1.2, 0.1, 3],
+                [1.2, -0.4, 3],
+                [1.2, 0.1, 2.6],
+                [1.2, -0.4, 2.6]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.5,
+                "height": 0.4
+            },
+            "connection-feature-type": "limb",
+            "connection-limb-type": "arm",
+            "orientation": "left"     
+        },
+        {
+            "name": "right-arm-joint",
+            "main-point": {
+                "x": -1.2,
+                "y": -0.2,
+                "z": 2.8
+            },
+            "bounding-box-points": [
+                [-1.2, 0.1, 3],
+                [-1.2, -0.4, 3],
+                [-1.2, 0.1, 2.6],
+                [-1.2, -0.4, 2.6]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.5,
+                "height": 0.4
+            },
+            "connection-feature-type": "limb",
+            "connection-limb-type": "arm",
+            "orientation": "right"     
+        },
+        {
+            "name": "neck-joint",
+            "main-point": {
+                "x": 0,
+                "y": -0.3,
+                "z": 3
+            },
+            "bounding-box-points": [
+                [-0.2, -0.3, 3.3],
+                [-0.2, -0.3, 3.3],
+                [0.2, -0.3, 2.7],
+                [0.2, -0.3, 2.7]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.4,
+                "height": 0.6
+            },
+            "connection-feature-type": "head"
+        }
+    ]     
+}
