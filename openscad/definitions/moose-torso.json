@@ -1,0 +1,140 @@
+{
+    "feature-type": "torso",
+    "feature-path": "features/moose-torso.stl",
+    "bounding-box-size": {
+        "width": 3,
+        "height": 3,
+        "length": 5.1
+    },
+    "center-point": {
+        "x": -1,
+        "y": 0,
+        "z": 1.5
+    },
+    "body-type": "quadrapedal",
+    "connection-points": [
+        {
+            "name": "left-front-joint",
+            "main-point": {
+                "x": 0.7,
+                "y": 0.6,
+                "z": 0.5
+            },
+            "bounding-box-points": [
+                [0.3, 0.8, 0.7],
+                [1, 0.8, 0.7],
+                [0.3, 0.3, 0.7],
+                [1, 0.3, 0.7]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.7,
+                "height": 0.5
+            },
+            "connection-feature-type": "limb",
+            "connection-limb-type": "foot",
+            "orientation": "left"     
+        },
+        {
+            "name": "right-front-joint",
+            "main-point": {
+                "x": -0.7,
+                "y": 0.6,
+                "z": 0.5
+            },
+            "bounding-box-points": [
+                [-0.3, 0.8, 0.7],
+                [-1, 0.8, 0.7],
+                [-0.3, 0.3, 0.7],
+                [-1, 0.3, 0.7]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.7,
+                "height": 0.5
+            },
+            "connection-feature-type": "limb",
+            "connection-limb-type": "foot",
+            "orientation": "right"     
+        },
+        {
+            "name": "left-back-joint",
+            "main-point": {
+                "x": 0.8,
+                "y": -1.6,
+                "z": 1
+            },
+            "bounding-box-points": [
+                [0.8, 1, 1.5],
+                [0.8, 1.7, 1.5],
+                [0.8, 1, 0.5],
+                [0.8, 1.7, 0.5]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.7,
+                "height": 1
+            },
+            "connection-feature-type": "limb",
+            "connection-limb-type": "foot",
+            "orientation": "left"     
+        },
+        {
+            "name": "left-back-joint",
+            "main-point": {
+                "x": -0.8,
+                "y": -1.6,
+                "z": 1
+            },
+            "bounding-box-points": [
+                [-0.8, 1, 1.5],
+                [-0.8, 1.7, 1.5],
+                [-0.8, 1, 0.5],
+                [-0.8, 1.7, 0.5]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.7,
+                "height": 1
+            },
+            "connection-feature-type": "limb",
+            "connection-limb-type": "foot",
+            "orientation": "right"     
+        },
+        {
+            "name": "neck-joint",
+            "main-point": {
+                "x": 0,
+                "y": -1.3,
+                "z": 2
+            },
+            "bounding-box-points": [
+                [-0.4, -1.3, 2.5],
+                [0.4, -1.3, 2.5],
+                [-0.4, -1.3, 1.5],
+                [0.4, -1.3, 1.5]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.8,
+                "height": 1
+            },
+            "connection-feature-type": "head"
+        },
+        {
+            "name": "tail-joint",
+            "main-point": {
+                "x": 0,
+                "y": -2.2,
+                "z": 1
+            },
+            "bounding-box-points": [
+                [0.3, -2.2, 1.5],
+                [-0.3, -2.2, 1.5],
+                [0.3, -2.2, 0.5],
+                [-0.3, -2.2, 0.5]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.6,
+                "height": 1
+            },
+            "connection-feature-type": "limb",
+            "connection-limb-type": "tail"
+        }
+    ]     
+}

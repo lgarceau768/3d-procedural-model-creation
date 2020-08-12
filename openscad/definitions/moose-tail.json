@@ -1,0 +1,36 @@
+{
+    "feature-type": "limb",
+    "feature-path": "features/moose-tail.stl",
+    "bounding-box-size": {
+        "width": 4,
+        "height": 3.3,
+        "length": 10.2
+    },
+    "limb-type": "tail",
+    "center-point": {
+        "x": 0,
+        "y": 5.1,
+        "z": 1.65
+    },
+    "connection-points": [
+        {
+            "name": "tail-joint",
+            "main-point": {
+                "x": -0.1,
+                "y": 0.2,
+                "z": 2.6
+            },
+            "bounding-box-points": [
+                [-0.3, 0.2, 3],
+                [0.1, 0.2, 3],
+                [-0.3, 0.2, 2],
+                [0.1, 0.2, 2]
+            ],
+            "bounding-box-dimensions": {
+                "width": 0.4,
+                "height": 1
+            },
+            "connection-feature-type": "torso"
+        }
+    ]
+}
